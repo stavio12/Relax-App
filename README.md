@@ -1,1 +1,1 @@
-# Relax-App
+# Relaxation-App

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="Jazz Meditation.css" rel="stylesheet" type="text/css"></link>
+    <script src="jquery-3.4.1.min.js"></script>
+    <title>Relaxation App</title>
+</head>
+<body>
+    <div id="app">
+
+        <div class ="background">
+           <video class="back" loop muted>
+               <source src = "videos/birds.mp4" type="video/mp4"/>
+           </video>
+        </div>
+
+        <div class="time">
+            <button data-time="600">10 minutes</button>
+            <button data-time="1800">30 minutes</button>
+            <button data-time="3600">60 minutes</button>
+        </div>
+        <div class="player">
+            <audio class="song">
+                <source src = "./Sounds/birds.mp3" />
+            </audio>
+            <img src = "./Images/play.png"/ alt = "play" class = "play" width = "30%"> 
+            <svg class ="track-out" width="453" height ="453" viewbox ="0 0 453 453" fill = "none">
+           <cirlce cx="226.5" cy="216.5" stroke ="white" stroke-width="20"/>  
+            </svg>
+
+            <svg class = "movement" width ="453" height = "453" viewbox = "0 0 453 453" fill = "none">
+                    <cirlce cx="226.5" cy="216.5" r = "216.5" stroke = "#018EBA" stroke-width = "20"/>  
+                     </svg>
+                     <h3 class = "time-display">0:00</h3>
+        </div>
+
+        <div class="sounds">
+            
+            <button data-sound = "./Sounds/birds.mp3" data-video="videos/birds.mp4">
+                <img src = "./Images/birds.png" width = "20%"/>
+            </button>
+            <button data-sound = "./Sounds/rains.mp3" data-video="videos/rains.mp4">
+                    <img src = "./Images/rain.png" width = "20%"/>
+            </button>
+            <button data-sound = "./Sounds/storms.mp3" data-video="videos/storm.mp4">
+                    <img src = "./Images/storm.png" width = "20%"/>
+            </button>
+            <button data-sound = "./Sounds/Jazz.mp3" data-video="videos/jazz.mp4">
+                    <img src = "./Images/jazz.png" width = "20%"/>
+            </button>
+        </div>
+
+    </div>
+
+</body>
+<script src="Jazz Meditation.js"></script>
+</html>
